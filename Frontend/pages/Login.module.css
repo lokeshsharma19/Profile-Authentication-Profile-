@@ -1,0 +1,40 @@
+.wrapper {
+  width: 100%;
+}
+.container {
+  border-radius: 1rem;
+  margin: auto;
+  max-width: 400px;
+  max-height: 70%;
+  background-color: rgb(211, 211, 211);
+  width: 60%;
+  height: 500px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 7%;
+}
+.formContainer {
+  text-align: center;
+  width: 100%;
+}
+
+.usernameContainer {
+  margin: 1rem 0;
+}
+.pwdContainer {
+  margin: 1rem 0;
+}
+
+input {
+  margin: 0 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.loginBtn {
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}

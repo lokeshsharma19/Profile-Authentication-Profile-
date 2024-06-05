@@ -1,0 +1,4 @@
+20240603	10:37:14	a69c6099-fc0e-475b-9c90-c872842a1a83	undefined: ECONNREFUSED	querySrv	_mongodb._tcp.cluster0.xsiq7uy.mongodb.net
+20240603	10:37:20	546b4047-c66b-48fb-ad58-d0165f6dc9de	undefined: ECONNREFUSED	querySrv	_mongodb._tcp.cluster0.xsiq7uy.mongodb.net
+20240603	10:37:35	066fc0c2-36ad-49c7-8b7b-36b6b42228a8	undefined: ECONNREFUSED	querySrv	_mongodb._tcp.cluster0.xsiq7uy.mongodb.net
+20240603	10:37:48	72d623fd-146c-44d9-83fd-a8b136bf6b23	undefined: ECONNREFUSED	querySrv	_mongodb._tcp.cluster0.xsiq7uy.mongodb.net

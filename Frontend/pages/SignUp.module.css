@@ -1,0 +1,27 @@
+.wrapper {
+  width: 100%;
+}
+.container {
+  margin: auto;
+  max-width: 400px;
+  max-height: 70%;
+  background-color: rgb(211, 211, 211);
+  width: 60%;
+  height: 500px;
+  padding: 2rem;
+  text-align: center;
+}
+.formContainer {
+  text-align: center;
+  width: 100%;
+}
+
+.usernameContainer {
+  margin-bottom: 0.5rem;
+}
+.emailContainer {
+  margin-bottom: 0.5rem;
+}
+.pwdContainer {
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,47 @@
+20240417	10:57:14	9e5e602f-a347-4e71-aba3-70a487406fd9	undefined: undefined	undefined	undefined	undefined
+20240417	10:58:39	1af9c51e-8837-4ef7-906d-f17550b719ae	undefined: undefined	undefined	undefined	undefined
+20240417	10:58:55	308b61f9-44d0-4a30-81ef-d8c46afbabff	undefined: undefined	undefined	undefined	undefined
+20240417	10:59:09	3c41d6f0-69b1-4114-bb30-90ea9631456b	undefined: undefined	undefined	undefined	undefined
+20240417	10:59:24	7a997306-7c1b-424d-a017-20590531f1c6	undefined: undefined	undefined	undefined	undefined
+20240417	11:00:34	5344a7d2-5423-42eb-b966-210054d0da2b	undefined: undefined	undefined	undefined	undefined
+20240417	11:01:47	ea492a46-061d-4efd-9730-5aac5d292186	undefined: undefined	undefined	undefined	undefined
+20240417	11:02:07	8225ad8f-0b1b-471b-838b-0237e87758b8	undefined: undefined	undefined	undefined	undefined
+20240417	11:02:39	5be4b1d6-7b98-410b-8346-f74467ee564b	TypeError: User.findOne is not a function	POST	/auth/sign-up	undefined
+20240417	11:04:10	e2bbae3b-cf0c-4999-bf80-bac6fbdc4d2e	TypeError: User.findOne is not a function	POST	/auth/sign-up	[object Object]
+20240417	11:04:49	7ba41daf-bbcb-4272-a56e-eb71e3c056a5	TypeError: User.findOne is not a function	POST	/auth/sign-up	[object Object]
+20240417	11:06:02	7d58e520-78f7-44cb-ba25-fcf4219e6342	TypeError: User.findOne is not a function	POST	/auth/sign-up	[object Object]
+20240417	11:06:25	b20079de-db8f-4f3e-ae27-87aa9d096732	TypeError: User.findOne is not a function	POST	/auth/sign-up	[object Object]
+20240417	11:17:10	fcedcf39-8ca6-40e5-822c-60ccf9fa39fa	MongoServerError: Invalid database name: 'auth_data/users_info'	POST	/auth/sign-up	[object Object]
+20240417	11:59:09	bf950947-37e2-4685-bcea-c26914a03806	ReferenceError: id is not defined	GET	/user/	[object Object]
+20240417	12:00:07	b8c58a3a-9cbf-4e83-9d88-05a06fbb87b2	ReferenceError: id is not defined	GET	/user/	[object Object]
+20240417	12:07:12	0137b33c-d6d2-4af5-b358-1068414e4688	TypeError: Cannot destructure property 'id' of 'null' as it is null.	PATCH	/user/?id=661f62892876d82ed7f843ff	[object Object]
+20240419	17:15:41	e34512da-3ba5-43a9-b0a4-1b30ee307326	Error: Cannot set headers after they are sent to the client	POST	/auth	[object Object]
+20240419	17:22:29	dc822236-8047-4092-a466-99b82510637e	Error: Cannot set headers after they are sent to the client	POST	/auth	[object Object]
+20240420	15:35:02	a6624682-e7c7-4ed8-abbc-fbd53aa43d1c	TypeError: Cannot read properties of undefined (reading 'length')	PATCH	/user/66211f77b58637794fff98b7	[object Object]
+20240420	15:41:00	1630a46e-2a0d-40e9-8bf0-8916f9546b81	ReferenceError: Cannot access 'username' before initialization	PATCH	/user/66211f77b58637794fff98b7	[object Object]
+20240420	15:41:40	7d55b0e9-c293-4a62-abe5-a11d17c2cc09	ReferenceError: id is not defined	PATCH	/user/66211f77b58637794fff98b7	[object Object]
+20240420	15:48:25	6b955fe3-d83f-4350-9983-8a3f42ca79c4	ValidationError: User validation failed: email: Path `email` is required.	PATCH	/user/66211f77b58637794fff98b7	[object Object]
+20240420	15:49:44	153605af-40c9-47fc-ad1b-383a5d4fe784	ValidationError: User validation failed: email: Path `email` is required.	PATCH	/user/66211f77b58637794fff98b7	[object Object]
+20240420	15:50:02	700f75ef-3130-4f3c-8cd4-f39c4fffbada	ValidationError: User validation failed: email: Path `email` is required.	PATCH	/user/66211f77b58637794fff98b7	[object Object]
+20240420	15:50:43	6799dc50-00b4-4067-be90-8d1c18ad5fee	ValidationError: User validation failed: email: Path `email` is required.	PATCH	/user/66211f77b58637794fff98b7	[object Object]
+20240421	18:29:54	b4cd2de9-d0ec-417f-be77-9a2f5eee2e4e	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"	PATCH	/user/undefined	[object Object]
+20240421	18:31:13	5be326cb-a05f-48ff-97a3-83b600598677	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"	PATCH	/user/undefined	[object Object]
+20240505	12:10:35	0aac61d8-f7f2-4b6b-96a5-5b47e16823bf	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ggeywtv-shard-00-00.xsiq7uy.mongodb.net	GET	/user	[object Object]
+20240531	16:04:30	15e7ec34-48c9-4fca-a058-3d7562a024da	ReferenceError: logEvents is not defined	POST	/auth	[object Object]
+20240601	18:52:31	cb1431b4-09e5-47ec-bf75-0a7e96c91e67	Error: Unknown authentication strategy "google"	GET	/auth/google	[object Object]
+20240603	08:40:30	ca591b2e-8b9b-4fd1-a7fa-d76781ec52db	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"	PATCH	/user/undefined	[object Object]
+20240603	08:48:08	9f3820e8-8d06-4027-a9b4-c04468f14e0d	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"	PATCH	/user/undefined	[object Object]
+20240603	08:53:35	ab27c4b0-7430-4c9f-b093-3b81055b4391	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"	PATCH	/user/undefined	[object Object]
+20240603	16:03:16	4afcfaf6-f4a5-422b-8a04-5cb388cd5c60	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ggeywtv-shard-00-00.xsiq7uy.mongodb.net	GET	/user	[object Object]
+20240603	16:19:22	71b4af4a-0a10-47d0-a81d-0a0471ebf3cc	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ggeywtv-shard-00-00.xsiq7uy.mongodb.net	GET	/user	[object Object]
+20240603	16:19:22	4cc1c087-d3cd-4c05-be97-2424d2ba2e14	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ggeywtv-shard-00-00.xsiq7uy.mongodb.net	GET	/user	[object Object]
+20240603	16:19:22	f6bec015-090c-4fd8-ac18-9598f3d6b6d2	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ggeywtv-shard-00-00.xsiq7uy.mongodb.net	GET	/user	[object Object]
+20240605	14:25:15	bb38768b-cd3e-4d65-8470-158cf76d0700	TypeError: res.cookies is not a function	POST	/auth	[object Object]
+20240605	14:25:30	ad2f6e00-14df-4589-a343-6c46527509df	TypeError: res.cookies is not a function	POST	/auth	[object Object]
+20240605	17:35:31	60cca999-a475-4947-a9fe-fc5fa85b8a69	Error: Not allowed by CORS	OPTIONS	/auth	[object Object]
+20240605	17:42:53	b04e24eb-8391-47a6-9588-9a1977ea26e9	Error: Not allowed by CORS	OPTIONS	/user	[object Object]
+20240605	17:42:53	776e77af-0607-437f-8517-b8d1356ef1a6	Error: Not allowed by CORS	OPTIONS	/user	[object Object]
+20240605	17:43:03	b4a27d42-5259-470e-84fd-f197cf6aa124	Error: Not allowed by CORS	OPTIONS	/user	[object Object]
+20240605	17:43:03	f6b13edf-13ea-4ebf-a902-8f83fe6b142e	Error: Not allowed by CORS	OPTIONS	/user	[object Object]
+20240605	17:43:05	ddb66343-de7d-48c1-898f-49da8fbca7d1	Error: Not allowed by CORS	OPTIONS	/user	[object Object]
+20240605	17:43:05	0857a12d-390f-43b2-b256-6b38a0908f26	Error: Not allowed by CORS	OPTIONS	/user	[object Object]
