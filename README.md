@@ -15,5 +15,3 @@ This project is a MERN stack application featuring JWT authentication. It uses r
 - **Backend**: Node.js, Express
 - **Database**: MongoDB
 - **Authentication**: JSON Web Tokens (JWT)
-
-## Project Structure
