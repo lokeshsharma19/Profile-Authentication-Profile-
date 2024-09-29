@@ -3,6 +3,7 @@ import { config } from "../constants";
 
 const instance = axios.create({
   baseURL: config.url.API_URL,
+  withCredentials: true,
 });
 
 instance.interceptors.request.use((config) => {
@@ -21,38 +22,36 @@ instance.interceptors.response.use(
   },
   async (error) => {
     const originalReq = error.config;
-    console.log(originalReq);
-    // if(error?.response?.status == 403 && )
+    if (
+      error?.response?.status == 401 &&
+      !originalReq._retry &&
+      !originalReq._loggedOut
+    ) {
+      originalReq._retry = true;
+      try {
+        const refreshResponse = await instance.get("/auth/refresh");
+        if (refreshResponse.status >= 200 && refreshResponse.status < 300) {
+          const accessToken = refreshResponse.data.accessToken;
+          localStorage.setItem("token", JSON.stringify(accessToken));
+          axios.defaults.headers.common[
+            "Authorization"
+          ] = `Bearer ${accessToken}`;
+          return instance(originalReq);
+        } else {
+          console.error("Refresh token expired or invalid");
+          originalReq._retry = false;
+          originalReq._loggedOut = true;
+          return Promise.reject(error);
+        }
+      } catch (error) {
+        console.log("Error refreshing token:", error);
+        localStorage.removeItem("token");
+        originalReq._retry = false;
+        return Promise.reject(error);
+      }
+    }
+    return Promise.reject(error);
   }
 );
 
 export default instance;
-
-// const originalReq = error.config;
-// if (
-//   error?.response?.status == 403 &&
-//   !originalReq._retry &&
-//   !originalReq._loggedOut
-// ) {
-//   originalReq._retry = true;
-//   try {
-//     const refreshResponse = await instance.get("/auth/refresh");
-//     if (refreshResponse.ok) {
-//       const accessToken = refreshResponse.data.accessToken;
-//       localStorage.setItem("token", JSON.stringify(accessToken));
-//       axios.defaults.headers.common[
-//         "Authorization"
-//       ] = `Bearer ${accessToken}`;
-//       return instance(originalReq);
-//     } else {
-//       console.error("Refresh token expired or invalid");
-//       originalReq._loggedOut = true;
-//       return Promise.reject(error);
-//     }
-//   } catch (error) {
-//     console.log("Error refreshing token:", error);
-//     originalReq._retry = false;
-//     return Promise.reject(error);
-//   }
-// }
-// return Promise.reject(error);

@@ -2,6 +2,26 @@ import React, { useState } from "react";
 import api from "../api/index";
 
 const EditProfile = ({ info, setUserData, handleEditMode }) => {
+  const [newUsername, setNewUsername] = useState(info.username);
+  const [newEmail, setNewEmail] = useState(info.email);
+  const [newPassword, setNewPassword] = useState("");
+  const [editing, setEditing] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newUserInfo = {
+      username: newUsername,
+      email: newEmail,
+      password: newPassword,
+    };
+    updateInfoReq(newUserInfo);
+    setUserData((prev) => ({
+      ...prev,
+      info: { _id: info._id, username: newUsername, email: newEmail },
+    }));
+    handleEditMode();
+  };
+
   const updateInfoReq = async (newUserInfo) => {
     try {
       const endpoint = `/user/${info._id}`;
@@ -17,38 +37,16 @@ const EditProfile = ({ info, setUserData, handleEditMode }) => {
     }
   };
 
-  const [editing, setEditing] = useState(false);
-  const [newUsername, setNewUsername] = useState(info.username);
-  const [newEmail, setNewEmail] = useState(info.email);
-  const [newPassword, setNewPassword] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newUserInfo = {
-      username: newUsername,
-      email: newEmail,
-      password: newPassword,
-    };
-    updateInfoReq(newUserInfo);
-    const newUserData = {
-      _id: info._id,
-      username: newUsername,
-      email: newEmail,
-    };
-    setUserData((prev) => ({
-      ...prev,
-      info: newUserData,
-    }));
-    handleEditMode();
-  };
   return (
-    <div>
-      <h2>Edit Info will change everywhere</h2>
-      <button onClick={handleEditMode}>Cancel</button>
-      <form onSubmit={(e) => handleSubmit(e)}>
+    <div className="bg-gray-800 bg-opacity-70 w-full max-w-2xl shadow-lg rounded-xl p-8 text-gray-50">
+      <h2 className="text-xl font-bold mb-4">Edit Profile</h2>
+      <form className="space-y-4" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="username">Username:</label>
+          <label htmlFor="username" className="block mb-2">
+            Username
+          </label>
           <input
+            className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white"
             onChange={(e) => {
               setNewUsername(e.target.value);
               setEditing(true);
@@ -56,12 +54,15 @@ const EditProfile = ({ info, setUserData, handleEditMode }) => {
             value={newUsername}
             type="text"
             id="username"
-            placeholder="username or email"
+            placeholder="Enter new username"
           />
         </div>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email" className="block mb-2">
+            Email
+          </label>
           <input
+            className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white"
             onChange={(e) => {
               setNewEmail(e.target.value);
               setEditing(true);
@@ -69,24 +70,37 @@ const EditProfile = ({ info, setUserData, handleEditMode }) => {
             value={newEmail}
             type="text"
             id="email"
-            placeholder="xyz@gmail.com"
+            placeholder="Enter new email"
           />
         </div>
         <div>
-          <h3>Change Password</h3>
-          <label htmlFor="password">New Password:</label>
+          <label htmlFor="password" className="block mb-2">
+            Password
+          </label>
           <input
+            className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white"
             onChange={(e) => {
               setNewPassword(e.target.value);
               setEditing(true);
             }}
-            type="text"
+            type="password"
             id="password"
-            placeholder="min 8 characters"
+            placeholder="Enter new password"
           />
         </div>
-        {editing && <button type="submit">Save</button>}
+        {editing && (
+          <button
+            type="submit"
+            className="mt-4 w-full bg-cyan-800 rounded-lg text-white py-2 hover:bg-cyan-700 transition-colors duration-300">
+            Save Changes
+          </button>
+        )}
       </form>
+      <button
+        className="mt-4 px-4 py-2 bg-red-700 rounded-lg text-white hover:bg-red-600 transition-colors duration-300"
+        onClick={handleEditMode}>
+        Cancel
+      </button>
     </div>
   );
 };

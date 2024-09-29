@@ -7,6 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server"
   },
+  "type": "commonjs",
   "keywords": [],
   "author": "",
   "license": "ISC",

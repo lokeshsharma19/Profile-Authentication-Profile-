@@ -8,6 +8,7 @@ const SessionModal = ({ status, error }) => {
       {status}
       {error.errorMsg}
       <button
+        className=""
         onClick={() => {
           navigate("/login");
         }}>

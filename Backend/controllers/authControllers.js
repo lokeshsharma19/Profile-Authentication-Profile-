@@ -13,17 +13,18 @@ const login = asyncHandler(async (req, res) => {
   const foundUser = await User.findOne({ username });
 
   if (!foundUser) {
-    return res.status(401).json({ message: "Unauthorized" });
+    return res.status(400).json({ message: "Unauthorized" });
   }
   const match = await bcrypt.compare(password, foundUser.password);
 
-  if (!match) return res.status(401).json({ message: "Unauthorized" });
+  if (!match) return res.status(400).json({ message: "Unauthorized" });
 
   const { accessToken, refreshToken } = newToken(foundUser.username);
 
   res.cookie("jwt", refreshToken, {
     httpOnly: true,
     secure: true,
+    sameSite: "none",
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
   res.status(201).json({
@@ -88,7 +89,7 @@ const refresh = asyncHandler(async (req, res) => {
           .json({ message: "Unauthorized authcontrollers" });
       }
 
-      const accessToken = newToken(foundUser.username);
+      const { accessToken } = newToken(foundUser.username);
 
       res.json({ accessToken });
     })

@@ -5,6 +5,8 @@ const path = require("path");
 const rootRouter = require("./routes/root");
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
+const quizRoutes = require("./routes/quizRoutes");
+const leaderBoardRoutes = require("./routes/leaderBoardRoutes");
 const { logger, logEvents } = require("./middleware/logger");
 const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
@@ -23,7 +25,7 @@ app.use(cors(corsOptions, { credentials: true }));
 
 app.use(cookieParser());
 
-app.use(logger)
+app.use(logger);
 
 app.use("/", express.static(path.join(__dirname, "public")));
 
@@ -32,6 +34,10 @@ app.use("/", rootRouter);
 app.use("/user", userRoutes);
 
 app.use("/auth", authRoutes);
+
+app.use("/", quizRoutes);
+
+app.use("/leaderboard", leaderBoardRoutes);
 
 app.all("*", (req, res) => {
   res.status(404);

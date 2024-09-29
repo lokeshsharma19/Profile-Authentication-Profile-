@@ -45,3 +45,97 @@
 20240605	17:43:03	f6b13edf-13ea-4ebf-a902-8f83fe6b142e	Error: Not allowed by CORS	OPTIONS	/user	[object Object]
 20240605	17:43:05	ddb66343-de7d-48c1-898f-49da8fbca7d1	Error: Not allowed by CORS	OPTIONS	/user	[object Object]
 20240605	17:43:05	0857a12d-390f-43b2-b256-6b38a0908f26	Error: Not allowed by CORS	OPTIONS	/user	[object Object]
+20240607	19:51:43	d77e4eb3-b476-4bf5-b8ff-0e383945d55d	Error: Not allowed by CORS	OPTIONS	/auth	[object Object]
+20240607	22:20:38	8cb2c852-5be1-4cd1-a8af-588cf7093cb8	ValidationError: User validation failed: email: Path `email` is required.	PATCH	/user/665d6dac34dd9a798a411fd8	[object Object]
+20240609	17:53:35	060f6cd1-a657-4e9c-bc67-7f15f18a7f07	ReferenceError: logEvents is not defined	POST	/auth	[object Object]
+20240609	17:53:53	346153dc-7364-4661-aa31-fea333a23f50	ReferenceError: logEvents is not defined	POST	/auth	[object Object]
+20240609	17:53:54	5077f694-3635-4b0c-aa51-9ea11af7de41	ReferenceError: logEvents is not defined	POST	/auth	[object Object]
+20240609	17:54:02	f3ca7094-5477-42ca-bf66-6cae17b8c678	ReferenceError: logEvents is not defined	POST	/auth	[object Object]
+20240610	12:39:35	68beb282-8b09-4bda-a381-f6113f713321	PoolClearedOnNetworkError: Connection to ac-ggeywtv-shard-00-01.xsiq7uy.mongodb.net:27017 interrupted due to server monitor timeout	GET	/user	[object Object]
+20240717	09:48:57	4af96bb3-07bf-4d03-935d-575ea4ffa019	Error: Not allowed by CORS	OPTIONS	/auth/sign-up	[object Object]
+20240908	13:54:24	5e1018ad-5a3f-46b6-9e77-1853c39e2380	Error: Not allowed by CORS	OPTIONS	/auth/sign-up	[object Object]
+20240908	13:54:56	0e78dd33-08cb-48ca-be28-d13b33c68b38	Error: Not allowed by CORS	OPTIONS	/auth/sign-up	[object Object]
+20240909	10:59:41	0f582305-f714-4f83-adfa-551668094e51	Error: Cannot set headers after they are sent to the client	GET	/quizzes?id=2	[object Object]
+20240909	11:00:45	bc3f9628-ad90-4a7b-99fc-c32b82375580	TypeError: req.params is not a function	GET	/quizzes?id=2	[object Object]
+20240909	11:04:27	639423b4-8dd9-4640-be37-8b08307669be	CastError: Cast to ObjectId failed for value "2" (type string) at path "_id" for model "Quiz"	GET	/quizzes?id=2	[object Object]
+20240909	11:04:49	80dfb894-407c-4322-8c1e-8d173ddfe03d	TypeError: Assignment to constant variable.	GET	/quizzes?id=2	[object Object]
+20240909	11:05:52	8598fb75-ad06-489f-a690-c6a76c12e52e	CastError: Cast to ObjectId failed for value "2" (type number) at path "_id" for model "Quiz"	GET	/quizzes?id=2	[object Object]
+20240909	11:08:29	78752914-e710-4135-a123-ce0380e3c2a9	CastError: Cast to ObjectId failed for value "{ id: 2 }" (type Object) at path "_id" for model "Quiz"	GET	/quizzes?id=2	[object Object]
+20240909	11:17:47	aa7269f6-e7bd-416d-9a45-81fcfec2427a	Error: read ETIMEDOUT	GET	/quizzes?id=1	[object Object]
+20240909	12:45:10	63d24f4d-09df-42ca-8ec1-a7a6d6de5a64	Error: read ETIMEDOUT	GET	/quizzes?id=7	[object Object]
+20240909	12:46:53	cc5e51e9-ae43-4e22-a085-ca01b43ed7c3	Error: read ETIMEDOUT	GET	/quizzes?id=8	[object Object]
+20240909	12:52:48	577dc9ae-32ba-4947-999f-11624819c016	Error: read ETIMEDOUT	GET	/quizzes?id=8	[object Object]
+20240909	13:03:16	3f7cd1f9-1591-4c14-9c40-c48614a38c29	Error: read ETIMEDOUT	GET	/quizzes?id=9	[object Object]
+20240909	13:07:43	bcba81f5-6cf1-45df-bf96-64729f0afcbc	Error: read ETIMEDOUT	GET	/quizzes?id=10	[object Object]
+20240909	13:12:28	2f215dfa-a775-4915-a749-61e662d231cc	Error: read ETIMEDOUT	GET	/quizzes?id=1	[object Object]
+20240909	13:18:31	6f284d88-9716-4072-b02c-ff2e1735d2aa	Error: read ETIMEDOUT	POST	/auth/sign-up	[object Object]
+20240909	13:26:41	2a617da1-0b1e-4aae-a48e-7fdf2c8802a6	Error: read ETIMEDOUT	GET	/quizzes?id=5	[object Object]
+20240909	13:26:43	21e2f035-862b-4f1c-8729-30c16f94b81b	Error: read ETIMEDOUT	GET	/quizzes?id=5	[object Object]
+20240909	13:27:14	40f4fde8-0415-4cbb-990b-5ac84a6dfd41	Error: read ETIMEDOUT	GET	/quizzes?id=5	[object Object]
+20240909	13:27:15	14c01c94-fb1b-45c6-ae5c-b437717c0d19	Error: read ETIMEDOUT	GET	/quizzes?id=1	[object Object]
+20240909	16:11:46	170f3aa8-4ee7-4e80-8460-f250265037ce	Error: read ETIMEDOUT	POST	/auth	[object Object]
+20240909	16:16:44	f17b7b94-61ee-4d3d-919c-6b53efb8b4d6	Error: read ETIMEDOUT	GET	/quizzes?id=2	[object Object]
+20240909	16:22:22	426552d7-94ee-4ad7-a173-68462a54fd01	Error: read ETIMEDOUT	GET	/quizzes?id=1	[object Object]
+20240909	16:29:13	49b0af3f-0ea9-42cb-8eb6-86ef72adb0c6	Error: read ETIMEDOUT	GET	/quizzes?id=1	[object Object]
+20240921	17:45:38	18364464-9218-4479-806f-d3839f40efb8	Error: read ECONNRESET	GET	/leaderboard	[object Object]
+20240921	17:45:39	34196350-8d11-4db7-a8c4-a46a530c5570	Error: read ECONNRESET	GET	/leaderboard	[object Object]
+20240921	18:04:44	9f262a73-61a6-4925-89be-28b1e7d52c01	ValidationError: Score validation failed: dateModified: Cast to date failed for value "[Function: toLocaleDateString]" (type function) at path "dateModified"	PUT	/leaderboard/update	[object Object]
+20240921	18:08:45	70a981cb-905c-4693-ad3b-7a38445ddfe8	CastError: Cast to ObjectId failed for value "{ userID: '66dea83c73317b41fa1b0dbf' }" (type Object) at path "_id" for model "Score"	PUT	/leaderboard/update	[object Object]
+20240921	19:41:12	0fe503f8-4fe5-43f1-9e87-c657085016b8	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:21	afb2189d-3cad-4042-b20e-380f913adc46	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:22	a685e087-b412-4824-bdc7-f24eb5f46503	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:22	e4129379-784a-436f-90f9-997bda876637	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:23	c6360c2a-b530-4719-ab90-6874a2b9b68a	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:23	0ccf9166-b82c-4c5d-a9fa-8f42fcc13115	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:23	2835a79b-26bc-495e-9daf-59acab0e68ff	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:23	21495f3e-8f7d-4ef1-8b60-1b07f35e191e	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:24	7d6b0576-0786-4973-8419-0efed9b66f8c	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:24	1a0f04a2-b597-4a64-a360-2bc5c15e5c46	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:24	e4fd815b-5789-4941-9243-89e0402273cc	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:25	3bfc5ab3-b860-4f8a-88ae-6f60012fba0e	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:25	da4b5996-c7dc-4fe4-b8c0-9fcd5fc71e98	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:25	d34d6c7e-909d-49e1-a544-a9947a54483a	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:25	4140d0ea-c0cd-4522-8646-441c946498dd	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:25	f3fda63f-5d4f-4ef4-9409-e12ea8612008	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	19:41:25	1153f79d-aa6c-460c-aa8e-f2261830c63b	TypeError: Quiz.findOne is not a function	GET	/quizzes?id=1	[object Object]
+20240921	20:23:52	dc87c880-5657-4486-b715-dc7297156e52	ValidationError: Score validation failed: userID: Path `userID` is required., latestScore: Path `latestScore` is required.	GET	/leaderboard/user	[object Object]
+20240921	20:24:07	a801d763-b8d8-4008-b190-76293643d3d9	ValidationError: Score validation failed: userID: Path `userID` is required., latestScore: Path `latestScore` is required.	GET	/leaderboard/user	[object Object]
+20240921	20:24:25	0aaecbaf-f358-408d-85eb-86f6c0ae4526	ValidationError: Score validation failed: userID: Path `userID` is required., latestScore: Path `latestScore` is required.	GET	/leaderboard/user	[object Object]
+20240921	20:24:33	a5fee2e0-96d6-4370-ab57-474aa9ecbcc6	ValidationError: Score validation failed: userID: Path `userID` is required., latestScore: Path `latestScore` is required.	GET	/leaderboard/user	[object Object]
+20240921	20:25:43	56e83faa-c96d-429d-ba4f-f1f354de2a0c	ValidationError: Score validation failed: userID: Path `userID` is required., latestScore: Path `latestScore` is required.	GET	/leaderboard/user	[object Object]
+20240921	20:26:18	043cecd8-fcc2-476a-b499-e9a629e1b065	ValidationError: Score validation failed: userID: Path `userID` is required., latestScore: Path `latestScore` is required.	GET	/leaderboard/user	[object Object]
+20240921	20:28:55	b8fb8313-592d-47f8-b622-67bc3bda2168	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle	GET	/leaderboard/user	[object Object]
+20240921	20:32:11	3cdf1cfe-d9b3-4aaa-9e77-fe985489cd7c	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle	GET	/leaderboard/user?userID=66eeba982c9b925bbcc02a18	[object Object]
+20240921	20:32:14	761af856-e487-4365-a6af-68a2f7f0a665	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle	GET	/leaderboard/user?userID=66eeba982c9b925bbcc02a18	[object Object]
+20240921	20:33:18	6a1670d9-51f0-4de9-af0e-5a01be8f4089	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle	GET	/leaderboard/user?userID=66eeba982c9b925bbcc02a18	[object Object]
+20240921	20:33:18	3f61a489-c42e-4758-a805-0c8e450fa0cf	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle	GET	/leaderboard/user?userID=66eeba982c9b925bbcc02a18	[object Object]
+20240921	20:35:22	0095f63b-bbd1-4bbd-a046-b51aacc19253	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle	GET	/leaderboard/user?userID=66eeba982c9b925bbcc02a18	[object Object]
+20240921	20:37:28	75b9e24b-325b-4ad4-9070-81271ae49c23	TypeError: Class constructor ObjectId cannot be invoked without 'new'	GET	/leaderboard/user?userID=66eeba982c9b925bbcc02a18	[object Object]
+20240921	20:37:58	2a4efddc-a0ad-4c84-8396-6f654f6e3baf	TypeError: Class constructor ObjectId cannot be invoked without 'new'	GET	/leaderboard/user?userID=66eeba982c9b925bbcc02a18	[object Object]
+20240921	20:41:35	34afe8b0-fa24-4a79-af31-f2ffc7ece598	TypeError: Class constructor ObjectId cannot be invoked without 'new'	GET	/leaderboard/user?userID=66eeba982c9b925bbcc02a18	[object Object]
+20240921	20:42:07	a3a06579-a5df-4e3e-8a3f-2b312a058557	TypeError: Class constructor ObjectId cannot be invoked without 'new'	GET	/leaderboard/user?userID=66eeba982c9b925bbcc02a18	[object Object]
+20240921	20:42:27	d2632ecf-dabe-4d40-a9f7-bea5d7694fce	TypeError: Class constructor ObjectId cannot be invoked without 'new'	GET	/leaderboard/user?userID=66eeba982c9b925bbcc02a18	[object Object]

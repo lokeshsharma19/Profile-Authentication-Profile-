@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "66de530eef5532ff437f9fa7"
+  },
+  "id": 1,
+  "title": "Quiz 1: Console Investigation",
+  "description": "Open the browser console and enter the secret key to proceed to the next quiz.",
+  "key": "5b95e",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66de530eef5532ff437f9fa8"
+  },
+  "id": 2,
+  "title": "Quiz 2: Element Class Challenge",
+  "description": "Inspect this element and enter the CSS class name applied to this description.",
+  "key": "descr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66de530eef5532ff437f9fa9"
+  },
+  "id": 3,
+  "title": "Quiz 3: Styling Detective",
+  "description": "Check the computed styles for this element and enter the text style properties.",
+  "key": "large",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66de530eef5532ff437f9faa"
+  },
+  "id": 4,
+  "title": "Quiz 4: Console Function Call",
+  "description": "Run the 'getKey()' function in the console to retrieve the key for the next quiz.",
+  "key": "26a49",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66de530eef5532ff437f9fab"
+  },
+  "id": 5,
+  "title": "Quiz 5: Session Storage Hunt",
+  "description": "Retrieve the key stored in session storage and enter it to proceed.",
+  "key": "f1eb1",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66de530eef5532ff437f9fac"
+  },
+  "id": 6,
+  "title": "Quiz 6: Payload Exploration",
+  "description": "Click the button below, inspect the network request, and extract the key from the payload to advance.",
+  "key": "dba84",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66de530eef5532ff437f9fad"
+  },
+  "id": 7,
+  "title": "Quiz 7: Local Storage Lookup",
+  "description": "Find the key stored in local storage and input it here to continue.",
+  "key": "fe9e0",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66de530eef5532ff437f9fae"
+  },
+  "id": 8,
+  "title": "Quiz 8: Loader Secret",
+  "description": "The key for this quiz is hidden within the loader of this page. Discover it and move on.",
+  "key": "c6526",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66de530eef5532ff437f9faf"
+  },
+  "id": 9,
+  "title": "Quiz 9: Token Unlock",
+  "description": "Use the access token stored in local storage as an argument in the 'getKey()' function to reveal the final key.",
+  "key": "e2324",
+  "__v": 0
+}]
