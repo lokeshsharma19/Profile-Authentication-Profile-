@@ -11,7 +11,6 @@ const login = asyncHandler(async (req, res) => {
   }
 
   const foundUser = await User.findOne({ username });
-
   if (!foundUser) {
     return res.status(400).json({ message: "Unauthorized" });
   }
