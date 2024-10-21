@@ -57,7 +57,7 @@ export const quizzes = [
 
 const dev = {
   url: {
-    API_URL: "http://localhost:3500",
+    API_URL: "https://profile-authentication-profile.onrender.com",
   },
 };
 
