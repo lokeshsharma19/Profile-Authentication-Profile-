@@ -1,6 +1,6 @@
 # Dev Game
 ## Live Demo
-You can play the **Dev Game** live at: [Your Live Demo Link]((https://10xdevchallenge.netlify.app))
+You can play the **Dev Game** live at: [Your Live Demo Link]([https://10xdevchallenge.netlify.app])
 
 ## Overview
 **Dev Game** is an interactive MERN stack application designed for developers to test and enhance their coding skills through a series of quizzes and challenges. The game leverages advanced functionalities like JWT authentication, MongoDB complex queries, and browser console exploration to create a unique and engaging experience.
